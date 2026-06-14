@@ -10,11 +10,10 @@ python-jose[cryptography]
 passlib[bcrypt]
 
 python-dotenv
-pydantic-settings
 
-redis
+pydantic-settings
 
 pytest
 httpx
 
-email-validator
+python-multipart

@@ -4,7 +4,7 @@ For venv run the below command in command prompt(terminal)
 - venv\Scripts\activate.bat
 
 To install the packages
-- pip install -r requirements.txt
+- python -m pip install -r requirements.txt
 
 
 job-tracker-api/
