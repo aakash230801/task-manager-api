@@ -1,4 +1,4 @@
-# task-manager-api
+# job-tracker-api
 
 For venv run the below command in command prompt(terminal)
 - venv\Scripts\activate.bat
@@ -7,63 +7,41 @@ To install the packages
 - pip install -r requirements.txt
 
 
-task-manager-api/
-
+job-tracker-api/
+│
 ├── app/
-│
-│── api/
-│   └── v1/
-│       ├── routers/
-│       │   ├── auth_router.py
-│       │   ├── user_router.py
-│       │   └── task_router.py
-│       │
-│       └── router.py
-│
-│── core/
-│   ├── config.py
-│   ├── security.py
-│   ├── exceptions.py
-│   └── logger.py
-│
-│── db/
-│   ├── database.py
-│   └── session.py
-│
-│── models/
-│   ├── user.py
-│   └── task.py
-│
-│── schemas/
-│   ├── auth.py
-│   ├── user.py
-│   └── task.py
-│
-│── repositories/
-│   ├── user_repository.py
-│   └── task_repository.py
-│
-│── facades/
-│   ├── auth_facade.py
-│   ├── user_facade.py
-│   └── task_facade.py
-│
-│── services/
-│   ├── jwt_service.py
-│   ├── password_service.py
-│   └── email_service.py
-│
-│── dependencies/
-│   ├── auth_dependency.py
-│   └── database_dependency.py
-│
-│── constants/
-│   └── enums.py
-│
-│── utils/
-│   └── helper.py
-│
-│── main.py
+│   │
+│   ├── api/
+│   │   └── routers/
+│   │       ├── auth_router.py
+│   │       ├── user_router.py
+│   │       └── job_router.py
+│   │
+│   ├── facades/
+│   │   ├── auth_facade.py
+│   │   ├── user_facade.py
+│   │   └── job_facade.py
+│   │
+│   ├── repositories/
+│   │   ├── user_repository.py
+│   │   └── job_repository.py
+│   │
+│   ├── models/
+│   │   ├── user.py
+│   │   └── job.py
+│   │
+│   ├── schemas/
+│   │   ├── user_schema.py
+│   │   └── auth_schema.py
+│   │
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── security.py
+│   │   └── database.py
+│   │
+│   ├── utils/
+│   │
+│   └── main.py
 │
 ├── tests/
 │
@@ -71,4 +49,5 @@ task-manager-api/
 │
 ├── .env
 ├── requirements.txt
+├── Dockerfile
 └── README.md
