@@ -6,6 +6,10 @@ For venv run the below command in command prompt(terminal)
 To install the packages
 - python -m pip install -r requirements.txt
 
+To start the backend application
+- python -m uvicorn app.main:app --reload
+
+Without __init__.py, imports can become unreliable
 
 job-tracker-api/
 │
